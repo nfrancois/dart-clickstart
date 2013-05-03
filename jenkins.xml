@@ -74,8 +74,15 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-        #TODO
+        #TODO down, pub, build, test, 
 
+        rm -rf target
+        mkdir target
+
+        cd app
+
+        rm -rf ../target/app.zip
+        zip -r ../target/app.zip *
 
 
 </command>

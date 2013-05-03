@@ -3,7 +3,7 @@
     "name": "Dart app",
     "source": "github",
     "description": "Simple war deployed through clickstart",
-    "icon": "https://si0.twimg.com/profile_images/1581261324/Twitter-02.png",
+    "icon": "http://si0.twimg.com/profile_images/1581261324/Twitter-02.png",
 
     "supported-by" : "community",
     "order" : 2,
@@ -13,5 +13,12 @@
          "app-parameters" : { 
             "runtime.PLUGIN.SRC.dart": "https://s3.amazonaws.com/clickstacks/nicofrancois/dart-plugin.zip"
         }    
+    },
+    "build-with-jenkins": {
+	"template": {
+            "type": "https://raw.github.com/nfrancois/dart-clickstart/master/jenkins.xml",
+            "options": {
+            }            
+        }
     }
 }
