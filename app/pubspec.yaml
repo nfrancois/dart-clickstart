@@ -1,0 +1,4 @@
+name: sampleapp
+description: A sample web application
+dependencies:
+  papaya: any
