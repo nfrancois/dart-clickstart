@@ -13,12 +13,5 @@
          "app-parameters" : { 
             "runtime.PLUGIN.SRC.dart": "https://s3.amazonaws.com/clickstacks/nicofrancois/dart-plugin.zip"
         }    
-    },
-    "build-with-jenkins": {
-	"template": {
-            "type": "https://raw.github.com/nfrancois/dart-clickstart/master/jenkins.xml",
-            "options": {
-            }            
-        }
     }
 }
