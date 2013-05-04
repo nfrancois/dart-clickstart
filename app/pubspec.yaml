@@ -1,4 +1,8 @@
-name: sampleapp
-description: A sample web application
+name: Todo_MVC
+description: A sample Dart application with Web UI.
+homepage: https://github.com/dart-lang/web-ui/tree/master/example/todomvc
 dependencies:
-  papaya: any
+  browser: any
+  web_ui: any
+dev_dependencies:
+  unittest: any

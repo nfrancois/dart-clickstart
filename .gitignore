@@ -3,3 +3,4 @@ packages
 pubspec.lock
 app/web/out
 .buildlog
+app/test/out
