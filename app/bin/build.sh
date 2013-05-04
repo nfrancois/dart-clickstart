@@ -6,6 +6,7 @@ pub install
 
 echo "Run tests..."
 dart test/test.dart
+rm -rf test/out
 
 echo "Build Web UI app..."
 dart build.dart

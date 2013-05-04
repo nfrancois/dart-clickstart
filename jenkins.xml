@@ -84,6 +84,8 @@ curl -L $DART_SDK_URL -s -o - | tar xzf -
 
 export PATH=$PATH:$WORKSPACE/dart-sdk/bin
 
+rm -rf packages
+
 rm -rf target
 mkdir target
 
