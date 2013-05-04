@@ -74,15 +74,24 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-        #TODO down, pub, build, test, 
 
-        rm -rf target
-        mkdir target
+rm -rf dart-sdk
 
-        cd app
+# Dart build version, you can change it if you need
+DART_BUILD="latest"
+DART_SDK_URL="http://commondatastorage.googleapis.com/dart-editor-archive-integration/$DART_BUILD/dartsdk-linux-64.tar.gz"
+curl -L $DART_SDK_URL -s -o - | tar xzf -
 
-        rm -rf ../target/app.zip
-        zip -r ../target/app.zip *
+export PATH=$PATH:$WORKSPACE/dart-sdk/bin
+
+rm -rf target
+mkdir target
+
+cd app
+bin/build.sh
+
+rm -rf ../target/app.zip
+zip -r ../target/app.zip *
 
 
 </command>
