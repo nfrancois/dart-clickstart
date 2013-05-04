@@ -84,13 +84,38 @@ curl -L $DART_SDK_URL -s -o - | tar xzf -
 
 export PATH=$PATH:$WORKSPACE/dart-sdk/bin
 
-rm -rf packages
 
 rm -rf target
 mkdir target
 
 cd app
-bin/build.sh
+
+# Build dart application
+
+pub install
+
+echo "Run tests..."
+#dart test/test.dart
+
+echo "Build Web UI app..."
+dart build.dart
+
+echo "Compile to js..."
+dart2js --checked --minify --out=web/out/index.html_bootstrap.dart.js web/out/index.html_bootstrap.dart
+
+echo "Copy compiled files..."
+rm web/out/*.map web/out/*.deps
+cp -a web/out/* web/
+
+echo "Clean..."
+rm pubspec.lock
+rm -rf web/out
+rm -rf test/out
+rm -rf packages
+rm test/packages
+rm web/packages
+
+echo "Package app to deploy..."
 
 rm -rf ../target/app.zip
 zip -r ../target/app.zip *
