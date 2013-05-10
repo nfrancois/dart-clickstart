@@ -13,4 +13,4 @@ DumpRenderTree does not work on jenkins because it's not installed.
 
 ## To deploy manually to CloudBees
 
-Read the [Dart clickstack doc](https://github.com/nfrancois/dart-clickstart)
+Read the [Dart clickstack doc](https://github.com/nfrancois/dart-clickstack)
