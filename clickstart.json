@@ -2,7 +2,7 @@
     "id": "dart-clickstart",
     "name": "Dart app",
     "source": "github",
-    "description": "Simple war deployed through clickstart",
+    "description": "A Dart Language app (server and client) with continuous deployment/testing",
     "icon": "https://raw.github.com/nfrancois/dart-clickstart/master/dart-logo.png",
 
     "supported-by" : "community",
