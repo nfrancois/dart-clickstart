@@ -3,7 +3,7 @@
     "name": "Dart app",
     "source": "github",
     "description": "A Dart Language app (server and client) with continuous deployment/testing",
-    "icon": "https://raw.github.com/nfrancois/dart-clickstart/master/dart-logo.png",
+    "icon": "https://d3ko533tu1ozfq.cloudfront.net/clickstart/dart-logo.png",
 
     "supported-by" : "community",
     "order" : 2,
