@@ -110,8 +110,8 @@ layer at (126,146) size 548x54
   RenderTextControl zI: 2 {INPUT} at (0,0) size 548x54 [bgcolor=#00000005]
 layer at (186,162) size 472x22
   RenderBlock {DIV} at (60,16) size 472x22 [color=#A9A9A9]
-    RenderText {#text} at (0,1) size 220x19
-      text run at (0,1) width 220: "What needs to be done?"
+    RenderText {#text} at (0,2) size 220x18
+      text run at (0,2) width 220: "What needs to be done?"
 layer at (186,162) size 472x22
   RenderBlock {DIV} at (60,16) size 472x22
 layer at (126,200) size 548x151

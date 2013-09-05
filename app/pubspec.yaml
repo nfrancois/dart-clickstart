@@ -2,9 +2,9 @@ name: Todo_MVC
 description: A sample Dart application with Web UI.
 homepage: https://github.com/dart-lang/web-ui/tree/master/example/todomvc
 dependencies:
-  web_ui: ">=0.4.7+3"
+  web_ui: ">=0.4.20 <0.4.21"
 dev_dependencies:
   js: any
   benchmark_harness: ">=1.0.2 <1.0.3"
 environment:
-  sdk: ">=0.5.4"
+  sdk: ">=0.7.1"
