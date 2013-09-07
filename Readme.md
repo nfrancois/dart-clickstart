@@ -1,6 +1,6 @@
-#Dart clickstart
+#Dart Web UI clickstart
 
-This clickstart demonstrates a basic todo app on CloudBees with continuous deployment.
+This clickstart demonstrates a basic todo application with Web UI on CloudBees with continuous deployment.
 
 To try, just click on  :
 

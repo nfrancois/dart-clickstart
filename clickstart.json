@@ -2,7 +2,7 @@
     "id": "dart-clickstart",
     "name": "Dart - Web UI",
     "source": "github",
-    "description": "A Dart Language app (server and client) with continuous deployment/testing",
+    "description": "A Dart Language Todo samples (server and client) developed with Web UI with continuous deployment/testing",
     "icon": "https://d3ko533tu1ozfq.cloudfront.net/clickstart/dart-logo.png",
 
     "supported-by" : "community",
