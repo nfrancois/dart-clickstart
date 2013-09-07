@@ -94,7 +94,9 @@ cd app
 
 pub install
 
-echo "Run tests..."
+dartanalyzer main.dart
+
+#echo "Run tests..."
 #dart test/test.dart
 
 echo "Build Web UI app..."
