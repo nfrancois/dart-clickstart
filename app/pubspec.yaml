@@ -1,10 +1,12 @@
-name: Todo_MVC
-description: A sample Dart application with Web UI.
-homepage: https://github.com/dart-lang/web-ui/tree/master/example/todomvc
+name: todomvc
+description: TodoMVC built with the polymer.dart package
+version: 0.14.0
 dependencies:
-  web_ui: ">=0.4.20 <0.4.21"
+  polymer: ">=0.9.0 <0.10.0"
+transformers:
+- polymer:
+    entry_points: web/index.html
 dev_dependencies:
-  js: any
-  benchmark_harness: ">=1.0.2 <1.0.3"
+  unittest: ">=0.9.0 <0.10.0"
 environment:
-  sdk: ">=0.7.1"
+  sdk: ">=0.8.10+6 <2.0.0"

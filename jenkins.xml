@@ -77,13 +77,14 @@
 
 rm -rf dart-sdk
 
-# Dart build version, you can change it if you need
-DART_BUILD="latest"
-DART_SDK_URL="http://commondatastorage.googleapis.com/dart-editor-archive-integration/$DART_BUILD/dartsdk-linux-64.tar.gz"
-curl -L $DART_SDK_URL -s -o - | tar xzf -
+DART_SDK_URL="http://storage.googleapis.com/dart-archive/channels/stable/release/latest/sdk/dartsdk-linux-x64-release.zip"
+DART_SDK_ZIP="dart_sql.zip"
+
+curl -L $DART_SDK_URL > $DART_SDK_ZIP
+unzip $DART_SDK_ZIP
+rm -f $DART_SDK_ZIP
 
 export PATH=$PATH:$WORKSPACE/dart-sdk/bin
-
 
 rm -rf target
 mkdir target
@@ -92,34 +93,25 @@ cd app
 
 # Build dart application
 
-pub install
+pub get
 
 dartanalyzer main.dart
 
-#echo "Run tests..."
-#dart test/test.dart
-
-echo "Build Web UI app..."
-dart build.dart
-
-echo "Compile to js..."
-dart2js --checked --minify --out=web/out/index.html_bootstrap.dart.js web/out/index.html_bootstrap.dart
+echo "Build/Compile Polymer app..."
+pub deploy
 
 echo "Copy compiled files..."
-rm web/out/*.map web/out/*.deps
-cp -a web/out/* web/
+rm -rf web
+mv build web
 
 echo "Clean..."
 rm pubspec.lock
-rm -rf web/out
-rm -rf test/out
+rm -rf web/packages
 rm -rf packages
-rm test/packages
-rm web/packages
 
 echo "Package app to deploy..."
 
-rm -rf ../target/app.zip
+rm -f ../target/app.zip
 zip -r ../target/app.zip *
 
 

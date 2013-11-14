@@ -3,9 +3,8 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-import 'dart:io';
-import 'package:web_ui/component_build.dart';
+import 'package:polymer/builder.dart';
 
-void main() {
-  build(new Options().arguments, ['web/index.html']);
+void main(args) {
+  build(entryPoints: ['web/index.html'], options: parseOptions(args));
 }

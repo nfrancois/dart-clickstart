@@ -1,10 +1,10 @@
-#Dart Web UI clickstart
+#Dart Polymer clickstart
 
-This clickstart demonstrates a basic todo application with Web UI on CloudBees with continuous deployment.
+This clickstart demonstrates a basic todo application with Polymer on CloudBees with continuous deployment.
 
 To try, just click on  :
 
-<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/nfrancois/dart-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
+<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/nfrancois/dart-polymer-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
 
 ## Change build
 
